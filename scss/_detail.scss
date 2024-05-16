@@ -1,0 +1,195 @@
+.detail-primary {
+    grid-template-columns: 1fr 330px;
+    margin-bottom: 1.875rem;
+    &__left {
+        flex: 1;
+    }
+    &__right {
+        padding-left: 1.875rem;
+        border-left: 1px solid #e5e5e5;
+        flex-shrink: 0;
+    }
+}
+.icon-share-2 {
+    position: sticky;
+    top: 20%;
+    border: 1px solid #eef4ed;
+    box-shadow: 0px 0px 5px #d5d5d594;
+}
+.detail-icon-comment a {
+    width: 3rem;
+    height: auto;
+    text-align: center;
+    padding: 10px 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.detail-title {
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 130%; /* 46.8px */
+    letter-spacing: 0.72px;
+}
+.detail-content {
+    padding-left: 4rem;
+
+    & figure figcaption {
+        background: #f7f7f7;
+        padding: 0.625rem 0.9375rem;
+        font-size: 1rem;
+        display: block;
+        margin: 0 auto;
+        max-width: 100%;
+        line-height: 1.25rem;
+        font-family: "Lato", sans-serif;
+        color: #555;
+        margin-bottom: 1.25rem;
+    }
+
+    & p {
+        font-size: 17px;
+        font-family: "Noto Serif", serif;
+        line-height: 1.75rem;
+        margin-bottom: 1.5rem;
+    }
+
+    & blockquote {
+        background-color: #f2efea;
+        padding: 18px 15px;
+        margin-bottom: 1.25rem;
+
+        & p {
+            font-family: "Arial";
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+}
+
+.detail-share {
+    &__item {
+        + .detail-share__item {
+            margin-left: 0.625rem;
+        }
+    }
+    &__link {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 2.25rem;
+        transition: all 0.2s ease;
+        &:hover {
+            opacity: 0.9;
+            box-shadow: 0 2px 3px rgba($color: #000000, $alpha: 0.4);
+        }
+    }
+    &--fb {
+        width: 2.25rem;
+        background-color: #3b5999;
+    }
+    &--like {
+        background-color: #087cce;
+        padding: 0 15px;
+
+        img {
+            width: 0.9375rem;
+            margin-right: 0.5rem;
+        }
+
+        span {
+            color: #fcfaf6;
+            line-height: 1;
+        }
+    }
+    &--twitter {
+        width: 2.25rem;
+        background-color: #55acee;
+    }
+    &--linked {
+        width: 2.25rem;
+        background-color: #0073b1;
+    }
+    &--email {
+        width: 2.25rem;
+        background-color: #e5e5e5;
+    }
+}
+.detail-tags {
+    display: flex;
+    overflow: auto;
+    white-space: nowrap;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.detail-tag-icon {
+    font-size: 14px;
+    background: #f2efea;
+    height: 36px;
+    width: 70px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5rem;
+    &:after {
+        content: "";
+        width: 0;
+        height: 0;
+        border-top: 18px solid transparent;
+        border-bottom: 18px solid transparent;
+        border-left: 8px solid #f2efea;
+        right: -8px;
+        position: absolute;
+    }
+}
+
+.detail-tag {
+    margin-right: 1.25rem;
+}
+
+.detail-tag-item {
+    font-weight: 700;
+    line-height: 22px;
+    font-family: "Roboto", sans-serif;
+    color: #4f4f4f;
+    font-size: 15px;
+    position: relative;
+    &:nth-child(odd) {
+        color: #096639;
+    }
+    &::before {
+        position: absolute;
+        content: "⁄";
+        color: #4f4f4f;
+        top: 50%;
+        left: -0.75rem;
+        transform: translateY(-50%);
+        -webkit-transform: translateY(-50%);
+        -moz-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        -o-transform: translateY(-50%);
+    }
+    &:nth-child(1)::before {
+        content: "";
+    }
+    & a:hover {
+        color: #096639;
+    }
+}
+
+.realated-news {
+    &__container {
+        & .article {
+            &:last-child,
+            &:nth-last-child(2),
+            &:nth-last-child(3) {
+                border-bottom: none;
+            }
+        }
+    }
+}

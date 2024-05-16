@@ -1,0 +1,197 @@
+// max width 1280px
+@media (max-width: 80em) {
+    .d-xl-none {
+        display: none;
+    }
+    .d-xl-block {
+        display: block;
+    }
+    .d-xl-flex {
+        display: flex;
+    }
+    .d-xl-grid {
+        display: grid;
+    }
+    /*------------------------------------------------------------- index*/
+    .wrapper {
+        padding-left: 0.625rem;
+        padding-right: 0.625rem;
+    }
+    .footer {
+        padding: 1.875rem 0;
+
+        &-logo {
+            img {
+                height: 80px;
+            }
+        }
+        &-info {
+            font-size: 0.875rem;
+            color: #000;
+            padding: 0;
+            border-bottom: 0;
+
+            &-left {
+                margin-bottom: 0.625rem;
+            }
+            &-right {
+                margin-bottom: 0.625rem;
+                text-align: left;
+            }
+        }
+        &-caution {
+            font-size: 0.875rem;
+            color: #000;
+            padding: 0;
+            text-align: left;
+            line-height: 1.375rem;
+            margin-bottom: 1.25rem;
+        }
+    }
+
+    .register-email {
+        &__group {
+            max-width: 240px;
+            margin: auto;
+        }
+        &__btn {
+            background-color: #eb242c;
+        }
+    }
+
+    // --------------------------------------------------------------------detail
+    .detail-content {
+        padding-left: 1rem;
+    }
+}
+// max width 1024px
+@media (max-width: 64em) {
+    .d-lg-none {
+        display: none;
+    }
+    .d-lg-block {
+        display: block;
+    }
+    .d-lg-flex {
+        display: flex;
+    }
+    .d-lg-grid {
+        display: grid;
+    }
+
+    .wrapper {
+        padding-left: 0.9375rem;
+        padding-right: 0.9375rem;
+    }
+    .ads-center {
+        background: transparent;
+        box-shadow: unset;
+        padding: 0;
+    }
+
+    // --------------------------------------------------------------------cate
+
+    // --------------------------------------------------------------------detail
+    .detail-content {
+        padding-left: 0;
+
+        & .detail-title {
+            margin-bottom: 1.25rem;
+        }
+        & .detail-time-public {
+            margin-bottom: 1.25rem;
+            line-height: 160%;
+        }
+    }
+    .detail-tags {
+        flex-wrap: nowrap;
+    }
+    .realated-news {
+        &__container {
+            grid-template-columns: 1fr 1fr;
+            grid-gap: 0.625rem;
+
+            & .article {
+                border-bottom: none;
+            }
+            & .article__content {
+                padding-top: 0.625rem;
+            }
+            & .article__title {
+                font-size: 1rem;
+            }
+        }
+    }
+    .other-news {
+        &__container {
+            & .article {
+                padding: 0.9375rem 0;
+
+                &:first-child {
+                    padding-top: 0;
+                }
+            }
+            & .article__title {
+                font-size: 1rem;
+                font-weight: 500;
+                font-family: "Roboto", sans-serif;
+            }
+            & .article__des,
+            & .time-public {
+                display: none;
+            }
+        }
+    }
+}
+
+// max width 768px
+@media (max-width: 48em) {
+    .d-md-none {
+        display: none;
+    }
+    .d-md-block {
+        display: block;
+    }
+    .d-md-flex {
+        display: flex;
+    }
+    .d-md-grid {
+        display: grid;
+    }
+
+    // --------------------------------------------------------------------index
+
+    // --------------------------------------------------------------------cate
+
+    // --------------------------------------------------------------------detail
+}
+
+// max width 640px
+@media (max-width: 40em) {
+    .d-sm-none {
+        display: none;
+    }
+    .d-sm-block {
+        display: block;
+    }
+    .d-sm-flex {
+        display: flex;
+    }
+    .d-sm-grid {
+        display: grid;
+    }
+
+    // --------------------------------------------------------------------header
+
+    // --------------------------------------------------------------------index
+
+    // --------------------------------------------------------------------cate
+
+    // --------------------------------------------------------------------detail
+}
+
+// danh cho man hinh duoi 400px
+@media (max-width: 25em) {
+}
+@media (max-width: 20em) {
+}
