@@ -48,7 +48,7 @@ body {
     font-size: 1rem;
     font-style: normal;
     text-rendering: geometricPrecision;
-    line-height: 1.5;
+    line-height: 1.3;
     color: #333;
     background-color: #fff;
 
@@ -277,6 +277,9 @@ img {
 }
 .text-gray-55 {
     color: #555;
+}
+.text-gray-62 {
+    color: #626262;
 }
 .text-gray-66 {
     color: #666;
@@ -1147,4 +1150,7 @@ img {
     &.active {
         display: block;
     }
+}
+.overflow-hidden {
+    overflow: hidden;
 }

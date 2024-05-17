@@ -146,6 +146,34 @@ document.addEventListener("DOMContentLoaded", function () {
                 });
             });
         },
+
+        // slider nhà đầu tư
+        sliderInvestos: function () {
+            var swiper5 = new Swiper(".mySwiperInvestor", {
+                slidesPerView: 2,
+                grid: {
+                    rows: 2,
+                    fill: "rows",
+                },
+                navigation: {
+                    nextEl: ".swiper-button-next3",
+                    prevEl: ".swiper-button-prev3",
+                },
+                pagination: {
+                    el: ".swiper-pagination3",
+                    clickable: true,
+                },
+                hideOnClick: true,
+                breakpoints: {
+                    768: {
+                        slidesPerView: 4,
+                    },
+                    1024: {
+                        slidesPerView: 6,
+                    },
+                },
+            });
+        },
         // scroll top
         scrollFunc: function () {
             if (backTop) {
@@ -192,6 +220,8 @@ document.addEventListener("DOMContentLoaded", function () {
             this.handleEvent();
             // slider one item
             this.sliderOneItems();
+            // slider nhà đầu tư
+            this.sliderInvestos();
             // window scroll
             this.windowScroll();
         },

@@ -1,5 +1,5 @@
 .nav-header-wrapper {
-    padding: 0.9375rem 0;
+    padding: 0.9375rem 20px;
 }
 .nav-header__logo {
     max-height: 3.125rem;
@@ -96,6 +96,7 @@
     border-bottom: 2px solid #00a216;
     position: relative;
     background-color: #fff;
+    padding: 0 20px;
     &.sticky {
         position: fixed;
         top: 0;
@@ -157,6 +158,8 @@
     }
 }
 .breadcrumb {
+    border-bottom: 1px solid #e0e0e0;
+    margin-bottom: 20px;
     &-item {
         position: relative;
         + .breadcrumb-item {
@@ -168,23 +171,49 @@
             font-weight: 800;
             line-height: 130%;
             text-transform: uppercase;
-            color: #096639;
+            color: #006838;
             &::before {
-                content: "";
+                content: "\276F";
+                position: absolute;
+                top: 50%;
+                right: -1.75rem;
+                transform: translateY(-50%);
+                font-size: 28px;
+                color: #00a216;
             }
         }
-        &::before {
-            content: "\276F";
-            position: absolute;
-            top: 50%;
-            left: -1.75rem;
-            transform: translateY(-50%);
-            font-size: 28px;
-            color: #acce22;
-        }
+        font-weight: bold;
+        color: #006838;
         &:last-child {
             user-select: none;
             pointer-events: none;
+            font-weight: 400;
+            color: #333;
+        }
+    }
+
+    &.breadcrumb--secondary {
+        .breadcrumb-item {
+            &:nth-child(n + 2) {
+                font-weight: 400;
+                color: #333;
+            }
+            &.active {
+                font-weight: bold;
+                color: #006838;
+            }
+            &:last-child {
+                user-select: unset;
+                pointer-events: unset;
+                font-weight: 400;
+                color: #333;
+            }
+            .breadcrumb-link {
+                &:hover {
+                    font-weight: bold;
+                    color: #006838;
+                }
+            }
         }
     }
 }

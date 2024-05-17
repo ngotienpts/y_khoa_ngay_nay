@@ -49,15 +49,29 @@
         margin-bottom: 1.25rem;
     }
 
-    & p {
+    & p,
+    & li {
         font-size: 17px;
         font-family: "Noto Serif", serif;
         line-height: 1.75rem;
         margin-bottom: 1.5rem;
     }
+    & ul {
+        padding-left: 30px;
+    }
+    & ul li {
+        list-style: disc;
+    }
+
+    & > h2 {
+        font-weight: bold;
+        font-size: 36px;
+        margin-bottom: 24px;
+        color: #333;
+    }
 
     & blockquote {
-        background-color: #f2efea;
+        background-color: #f1f9ff;
         padding: 18px 15px;
         margin-bottom: 1.25rem;
 
@@ -190,6 +204,79 @@
             &:nth-last-child(3) {
                 border-bottom: none;
             }
+        }
+    }
+}
+
+.detail-doctor-primary {
+    position: relative;
+    padding: 20px;
+    background-image: url(../images/bg_4.png);
+    background-repeat: no-repeat;
+    background-size: auto;
+
+    .article {
+        display: flex;
+        width: 100%;
+        .image-wrapper {
+            padding-bottom: 100%;
+        }
+        .image-wrapper img {
+            border-radius: 50%;
+        }
+    }
+    .article__img {
+        flex-shrink: 0;
+        width: 300px;
+    }
+    .article__content {
+        flex: 1;
+        margin-left: 40px;
+    }
+
+    .article__title {
+        color: #b6ffd4;
+    }
+    .article__contact {
+        font-size: 13px;
+        padding: 8px 10px;
+        background-color: #006838;
+        border-radius: 999px;
+        color: #fff;
+        font-weight: 300;
+        font-family: arial;
+        display: inline-block;
+        &:hover {
+            color: #c35403;
+        }
+    }
+}
+.btn-contact {
+    font-size: 13px;
+    padding: 8px 10px;
+    background-color: #006838;
+    border-radius: 999px;
+    color: #fff;
+    font-weight: 300;
+    font-family: arial;
+    display: inline-block;
+    flex-shrink: 0;
+    &:hover {
+        color: #c35403;
+    }
+    &--secondary {
+        background-color: #8d8d8d;
+    }
+}
+
+.detail-author {
+    &__img {
+        flex-shrink: 0;
+        margin-right: 10px;
+        img {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
         }
     }
 }
