@@ -2606,6 +2606,11 @@ img {
 .detail-content figure {
   margin-bottom: 1.25rem;
 }
+.detail-content figure img {
+  width: 100%;
+  height: auto !important;
+  margin: auto;
+}
 .detail-content figure figcaption {
   background: #f7f7f7;
   padding: 0.625rem 0.9375rem;

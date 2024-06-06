@@ -37,6 +37,12 @@
     padding-left: 4rem;
     & figure {
         margin-bottom: 1.25rem;
+
+        img {
+            width: 100%;
+            height: auto !important;
+            margin: auto;
+        }
     }
     & figure figcaption {
         background: #f7f7f7;
