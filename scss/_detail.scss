@@ -35,7 +35,9 @@
 }
 .detail-content {
     padding-left: 4rem;
-
+    & figure {
+        margin-bottom: 1.25rem;
+    }
     & figure figcaption {
         background: #f7f7f7;
         padding: 0.625rem 0.9375rem;
@@ -46,7 +48,6 @@
         line-height: 1.25rem;
         font-family: "Lato", sans-serif;
         color: #555;
-        margin-bottom: 1.25rem;
     }
 
     & p,
@@ -213,7 +214,7 @@
     padding: 20px;
     background-image: url(../images/bg_4.png);
     background-repeat: no-repeat;
-    background-size: auto;
+    background-size: cover;
 
     .article {
         display: flex;

@@ -82,7 +82,7 @@
     padding: 60px 20px 44px;
     background-image: url("../images/bg_1.png");
     background-repeat: no-repeat;
-    background-size: auto;
+    background-size: cover;
 
     &__title {
         position: relative;
@@ -202,7 +202,6 @@
                     margin-top: -20px;
                     position: relative;
                     z-index: 10;
-                    background-image: linear-gradient();
                 }
             }
         }
@@ -234,22 +233,21 @@
     .article__content {
         margin-top: 24px;
     }
-    .article__more {
-        font-size: 13px;
-        padding: 8px 10px;
-        background-color: #006838;
-        border-radius: 999px;
-        color: #fff;
-        font-weight: 300;
-        font-family: arial;
-        margin-top: 24px;
-        display: inline-block;
-        &:hover {
-            color: #c35403;
-        }
+}
+.article__more {
+    font-size: 13px;
+    padding: 8px 10px;
+    background-color: #006838;
+    border-radius: 999px;
+    color: #fff;
+    font-weight: 300;
+    font-family: arial;
+    margin-top: 24px;
+    display: inline-block;
+    &:hover {
+        color: #c35403;
     }
 }
-
 .investors {
     position: relative;
     padding-bottom: 2rem;

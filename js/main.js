@@ -43,15 +43,15 @@ document.addEventListener("DOMContentLoaded", function () {
 
                 subMenu.onclick = function () {
                     this.parentElement.classList.add("active");
-                    document.querySelector("body").classList.add("hidden");
+                    document.querySelector("body").style.overflow = "hidden";
                 };
                 closeSubMenu.onclick = function () {
                     parentBox.classList.remove("active");
-                    document.querySelector("body").classList.remove("hidden");
+                    document.querySelector("body").style.overflow = "auto";
                 };
                 overlay.onclick = function () {
                     parentBox.classList.remove("active");
-                    document.querySelector("body").classList.remove("hidden");
+                    document.querySelector("body").style.overflow = "auto";
                 };
             }
 
@@ -150,7 +150,7 @@ document.addEventListener("DOMContentLoaded", function () {
         // slider nhà đầu tư
         sliderInvestos: function () {
             var swiper5 = new Swiper(".mySwiperInvestor", {
-                slidesPerView: 2,
+                slidesPerView: 3,
                 grid: {
                     rows: 2,
                     fill: "rows",
