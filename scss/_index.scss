@@ -211,7 +211,18 @@
 .section-tertiary {
     background-image: linear-gradient(180deg, #0a1e29, #004165);
     padding: 0 20px 30px;
+    &__container {
+        position: relative;
+        padding-top: 40px;
+    }
 
+    &__wave {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        width: 100%;
+    }
     &__content {
         margin-top: 30px;
         padding-bottom: 30px;
