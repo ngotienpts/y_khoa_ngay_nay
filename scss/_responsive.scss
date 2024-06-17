@@ -128,6 +128,11 @@
         overflow: auto;
     }
 
+    .breadcrumb-primary {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
     // --------------------------------------------------------------------detail
     .detail-content {
         padding-left: 0;
@@ -142,6 +147,7 @@
     }
     .detail-tags {
         flex-wrap: nowrap;
+        white-space: nowrap;
     }
     .realated-news {
         &__container {

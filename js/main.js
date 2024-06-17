@@ -18,6 +18,9 @@ document.addEventListener("DOMContentLoaded", function () {
     // navbar mb
     var navbarMb = document.querySelector(".js__navbarMenuMb");
 
+    // slide
+    var autoSlides = document.querySelectorAll(".js__swiperAutoContainer");
+
     // tabs
     var tabs = document.querySelectorAll(".js__tabItem");
     var panes = document.querySelectorAll(".js__tabPane");
@@ -146,6 +149,22 @@ document.addEventListener("DOMContentLoaded", function () {
                 });
             });
         },
+        // slider auto
+        sliderAutoItems: function () {
+            autoSlides.forEach((item) => {
+                var slider = item.querySelector(".js__swiperAuto");
+                var next = item.querySelector(".swiper-button-next");
+                var prev = item.querySelector(".swiper-button-prev");
+                new Swiper(slider, {
+                    slidesPerView: "auto",
+                    spaceBetween: 0,
+                    navigation: {
+                        nextEl: next || null,
+                        prevEl: prev || null,
+                    },
+                });
+            });
+        },
 
         // slider nhà đầu tư
         sliderInvestos: function () {
@@ -220,6 +239,8 @@ document.addEventListener("DOMContentLoaded", function () {
             this.handleEvent();
             // slider one item
             this.sliderOneItems();
+            // slider auto
+            this.sliderAutoItems();
             // slider nhà đầu tư
             this.sliderInvestos();
             // window scroll

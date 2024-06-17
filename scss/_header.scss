@@ -182,13 +182,11 @@
                 color: #00a216;
             }
         }
-        font-weight: bold;
-        color: #006838;
-        &:last-child {
-            user-select: none;
-            pointer-events: none;
-            font-weight: 400;
-            color: #333;
+        font-weight: 400;
+        color: #333;
+        &.active {
+            font-weight: bold;
+            color: #006838;
         }
     }
 
@@ -201,12 +199,6 @@
             &.active {
                 font-weight: bold;
                 color: #006838;
-            }
-            &:last-child {
-                user-select: unset;
-                pointer-events: unset;
-                font-weight: 400;
-                color: #333;
             }
             .breadcrumb-link {
                 &:hover {
@@ -375,4 +367,72 @@
     display: flex;
     align-items: center;
     justify-content: center;
+}
+.breadcrumb-primary {
+    border-bottom: 1px solid #e0e0e0;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    padding-bottom: 10px;
+    &__slide {
+        max-width: 1140px;
+    }
+    .swiper-slide {
+        width: auto !important;
+    }
+    .swiper-button-next,
+    .swiper-button-prev {
+        width: 30px;
+        height: 30px;
+        margin-top: 0;
+        background: #8c3414;
+        color: #ffffff;
+        transform: translateY(-50%);
+    }
+
+    .swiper-button-next:after,
+    .swiper-button-prev:after {
+        font-size: 12px;
+    }
+    .swiper-button-next,
+    .swiper-rtl .swiper-button-prev {
+        right: 0;
+        left: auto;
+    }
+    .swiper-button-next.swiper-button-disabled,
+    .swiper-button-prev.swiper-button-disabled {
+        opacity: 0;
+        cursor: auto;
+    }
+    .swiper-slide {
+        width: auto;
+        display: inline-block;
+        position: relative;
+        &:first-child {
+            .breadcrumb-primary__item {
+                font-size: 24px;
+                font-weight: bold;
+                line-height: 130%;
+                text-transform: uppercase;
+                color: #006838;
+                &::before {
+                    content: "\276F";
+                    position: absolute;
+                    top: 50%;
+                    right: -1.75rem;
+                    transform: translateY(-50%);
+                    font-size: 28px;
+                    color: #00a216;
+                }
+            }
+        }
+        &:nth-child(n + 2) {
+            margin-left: 2.5rem;
+            margin-top: 7px;
+
+            // &:hover {
+            //     color: #006838;
+            //     font-weight: bold;
+            // }
+        }
+    }
 }
