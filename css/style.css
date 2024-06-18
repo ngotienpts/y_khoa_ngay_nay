@@ -2245,7 +2245,6 @@ img {
 }
 .investors .investor-item {
   width: 30%;
-  height: 100px;
   padding: 10px;
   display: flex;
   align-items: center;
@@ -2255,6 +2254,8 @@ img {
 }
 .investors .investor-item img {
   object-fit: contain;
+  height: 88px;
+  width: auto;
 }
 
 .ads-center {
@@ -3206,7 +3207,9 @@ img {
   }
   .investors .investor-item {
     width: 28%;
-    height: 60px;
+  }
+  .investors .investor-item img {
+    height: 48px;
   }
   .investors .investor-title {
     font-size: 18px;

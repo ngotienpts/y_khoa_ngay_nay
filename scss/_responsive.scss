@@ -381,7 +381,10 @@
 
         .investor-item {
             width: 28%;
-            height: 60px;
+
+            img {
+                height: 48px;
+            }
         }
         .investor-title {
             font-size: 18px;

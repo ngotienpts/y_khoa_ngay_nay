@@ -283,7 +283,6 @@
 
     .investor-item {
         width: 30%;
-        height: 100px;
         padding: 10px;
         display: flex;
 
@@ -294,6 +293,8 @@
 
         img {
             object-fit: contain;
+            height: 88px;
+            width: auto;
         }
     }
 }
