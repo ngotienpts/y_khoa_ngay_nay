@@ -261,107 +261,39 @@
 }
 .investors {
     position: relative;
-    padding-bottom: 2rem;
     &-wrapper {
         background-color: #f1f9ff;
         position: relative;
         // height: 100%;
         padding: 60px 20px;
     }
-    .swiper-container {
-        width: 100%;
-        height: 100%;
-        margin-left: auto;
-        margin-right: auto;
 
-        .swiper-slide {
-            text-align: center;
-            height: auto;
-            display: -webkit-box;
-            display: -ms-flexbox;
-            display: -webkit-flex;
-            display: flex;
-            -webkit-box-pack: center;
-            -ms-flex-pack: center;
-            -webkit-justify-content: center;
-            justify-content: center;
-            -webkit-box-align: center;
-            -ms-flex-align: center;
-            -webkit-align-items: center;
-            align-items: center;
+    .investor-container {
+        max-width: 654px;
+        margin: auto;
+    }
+
+    .investor-list {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        gap: 24px;
+    }
+
+    .investor-item {
+        width: 30%;
+        padding: 10px;
+        display: flex;
+
+        align-items: center;
+        justify-content: center;
+        background-color: #fff;
+        border-radius: 5px;
+
+        img {
+            object-fit: contain;
         }
-    }
-    .swiper-button-next3,
-    .swiper-rtl .swiper-button-prev3 {
-        right: 0;
-        left: auto;
-        top: 25px;
-        position: absolute;
-    }
-    .swiper-button-prev3,
-    .swiper-rtl .swiper-button-next3 {
-        left: auto;
-        right: 3rem;
-        top: 25px;
-        position: absolute;
-    }
-    .swiper-button-next3,
-    .swiper-rtl .swiper-button-prev3,
-    .swiper-button-prev3,
-    .swiper-rtl .swiper-button-next3 {
-        width: 2.5rem;
-        height: 2.5rem;
-        background: #f4f6f8;
-        border: 1px solid #f4f6f8;
-        border-radius: 50%;
-        -webkit-border-radius: 50%;
-        -moz-border-radius: 50%;
-        -ms-border-radius: 50%;
-        -o-border-radius: 50%;
-    }
-    .swiper-button-prev3:after,
-    .swiper-rtl .swiper-button-next3:after {
-        content: "\276E";
-        font-size: 1rem;
-        color: #828282;
-        transition: 0.2s;
-        -webkit-transition: 0.2s;
-        -moz-transition: 0.2s;
-        -ms-transition: 0.2s;
-        -o-transition: 0.2s;
-    }
-    .swiper-button-next3:after,
-    .swiper-rtl .swiper-button-prev3:after {
-        content: "\276F";
-        font-size: 1rem;
-        color: #0870d1;
-        transition: 0.2s;
-        -webkit-transition: 0.2s;
-        -moz-transition: 0.2s;
-        -ms-transition: 0.2s;
-        -o-transition: 0.2s;
-    }
-    .swiper-button-next3,
-    .swiper-button-prev3 {
-        background: #f4f6f8;
-        transition: 0.2s;
-        -webkit-transition: 0.2s;
-        -moz-transition: 0.2s;
-        -ms-transition: 0.2s;
-        -o-transition: 0.2s;
-    }
-    .swiper-pagination3 {
-        bottom: -10px;
-    }
-    .swiper-pagination-bullet {
-        background: #5b5858;
-        opacity: 1;
-    }
-    .swiper-pagination-bullet-active {
-        background: #c0c0c0;
-    }
-    .swiper-img-3 {
-        padding: 1.5rem;
     }
 }
 

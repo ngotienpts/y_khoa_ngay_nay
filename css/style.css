@@ -2226,106 +2226,34 @@ img {
 
 .investors {
   position: relative;
-  padding-bottom: 2rem;
 }
 .investors-wrapper {
   background-color: #f1f9ff;
   position: relative;
   padding: 60px 20px;
 }
-.investors .swiper-container {
-  width: 100%;
-  height: 100%;
-  margin-left: auto;
-  margin-right: auto;
+.investors .investor-container {
+  max-width: 654px;
+  margin: auto;
 }
-.investors .swiper-container .swiper-slide {
-  text-align: center;
-  height: auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
+.investors .investor-list {
   display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  -webkit-align-items: center;
+  flex-wrap: wrap;
   align-items: center;
+  justify-content: center;
+  gap: 24px;
 }
-.investors .swiper-button-next3,
-.investors .swiper-rtl .swiper-button-prev3 {
-  right: 0;
-  left: auto;
-  top: 25px;
-  position: absolute;
+.investors .investor-item {
+  width: 30%;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  border-radius: 5px;
 }
-.investors .swiper-button-prev3,
-.investors .swiper-rtl .swiper-button-next3 {
-  left: auto;
-  right: 3rem;
-  top: 25px;
-  position: absolute;
-}
-.investors .swiper-button-next3,
-.investors .swiper-rtl .swiper-button-prev3,
-.investors .swiper-button-prev3,
-.investors .swiper-rtl .swiper-button-next3 {
-  width: 2.5rem;
-  height: 2.5rem;
-  background: #f4f6f8;
-  border: 1px solid #f4f6f8;
-  border-radius: 50%;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  -ms-border-radius: 50%;
-  -o-border-radius: 50%;
-}
-.investors .swiper-button-prev3:after,
-.investors .swiper-rtl .swiper-button-next3:after {
-  content: "❮";
-  font-size: 1rem;
-  color: #828282;
-  transition: 0.2s;
-  -webkit-transition: 0.2s;
-  -moz-transition: 0.2s;
-  -ms-transition: 0.2s;
-  -o-transition: 0.2s;
-}
-.investors .swiper-button-next3:after,
-.investors .swiper-rtl .swiper-button-prev3:after {
-  content: "❯";
-  font-size: 1rem;
-  color: #0870d1;
-  transition: 0.2s;
-  -webkit-transition: 0.2s;
-  -moz-transition: 0.2s;
-  -ms-transition: 0.2s;
-  -o-transition: 0.2s;
-}
-.investors .swiper-button-next3,
-.investors .swiper-button-prev3 {
-  background: #f4f6f8;
-  transition: 0.2s;
-  -webkit-transition: 0.2s;
-  -moz-transition: 0.2s;
-  -ms-transition: 0.2s;
-  -o-transition: 0.2s;
-}
-.investors .swiper-pagination3 {
-  bottom: -10px;
-}
-.investors .swiper-pagination-bullet {
-  background: #5b5858;
-  opacity: 1;
-}
-.investors .swiper-pagination-bullet-active {
-  background: #c0c0c0;
-}
-.investors .swiper-img-3 {
-  padding: 1.5rem;
+.investors .investor-item img {
+  object-fit: contain;
 }
 
 .ads-center {
@@ -3273,10 +3201,13 @@ img {
   }
 
   .investors {
-    padding-bottom: 15px;
+    padding-bottom: 0;
   }
-  .investors .swiper-img-3 {
-    padding: 15px;
+  .investors .investor-item {
+    width: 28%;
+  }
+  .investors .investor-title {
+    font-size: 18px;
   }
 
   .cate-sick-secondary__content .list-sick {

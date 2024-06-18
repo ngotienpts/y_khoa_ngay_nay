@@ -377,9 +377,13 @@
         padding: 40px 20px;
     }
     .investors {
-        padding-bottom: 15px;
-        .swiper-img-3 {
-            padding: 15px;
+        padding-bottom: 0;
+
+        .investor-item {
+            width: 28%;
+        }
+        .investor-title {
+            font-size: 18px;
         }
     }
 
