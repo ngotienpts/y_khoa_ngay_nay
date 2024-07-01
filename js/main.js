@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", function () {
     // search mb
     var searchMbs = document.querySelectorAll(".js__searchMb");
 
-    // show popup image
+    // one slide
     var oneSlides = document.querySelectorAll(".js__swiperItemsContainer");
 
     // navbar mb
@@ -141,7 +141,7 @@ document.addEventListener("DOMContentLoaded", function () {
                     spaceBetween: 30,
                     slidesPerGroup: 1,
                     autoHeight: true,
-                    effect: "fade",
+                    // effect: "fade",
                     pagination: {
                         el: pagi,
                         clickable: true,

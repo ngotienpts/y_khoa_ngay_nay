@@ -77,6 +77,27 @@
 .heading-tertiary {
     position: relative;
 }
+
+.heading-quaternary {
+        font-weight: bold;
+        font-size: 20px;
+        position: relative;
+        color: #096639;
+        border-left: 3px solid #ACCE22;
+        padding-left: 6px;
+        padding-right: 15px;
+        margin-bottom: 20px;
+}
+
+.heading-quinary {
+    font-weight: bold;
+    font-size: 32px;
+    position: relative;
+    color: #096639;
+    border-bottom: 2px solid #006838;
+    padding-bottom: 12px;
+    margin-bottom: 20px;
+}
 .section-primary {
     position: relative;
     padding: 60px 20px 44px;

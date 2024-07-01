@@ -248,6 +248,25 @@
             width: 200px;
         }
     }
+
+    .detail-primary,
+    .cate-primary {
+        &__right {
+            padding-left: 0;
+            border-left: 0;
+            margin-top: 30px;
+
+            .box-event {
+                max-width: 100%;
+            }
+
+            .ads-right {
+                img {
+                    margin: auto;
+                }
+            }
+        }
+    }
 }
 
 // max width 640px
@@ -269,14 +288,17 @@
 
     // --------------------------------------------------------------------index
     .heading-secondary {
-        font-size: 24px;
+        font-size: 20px;
     }
     .heading-tertiary {
+        font-size: 20px;
+    }
+    .heading-quinary {
         font-size: 24px;
     }
     .section-primary {
         &__title {
-            font-size: 24px;
+            font-size: 20px;
         }
         &__content {
             padding: 20px;
@@ -497,6 +519,68 @@
         .heading-quinary {
             font-size: 26px;
             margin-bottom: 20px;
+        }
+    }
+    .disease-list-primary {
+        padding: 20px;
+
+        .article {
+            display: block;
+
+            .article__img {
+                width: 100%;
+               
+            }
+
+            .article__content {
+                padding: 20px 0 0;
+            }
+
+            .article__title {
+                font-size: 28px;
+            }
+        }
+    }
+
+    .disease-list-secondary {
+        .articles {
+            column-gap: 20px;
+            margin-bottom: 20px;
+            padding-bottom: 20px;
+            margin-top: 20px;
+
+            .article {
+                width: calc(50% - 10px);
+                    padding: 0;
+
+                    .time-public,
+                    .article__des {
+                        display: none;
+                    }
+
+                    .article__content {
+                        max-width: 100%;
+                        margin-top: 15px;
+                    }
+
+                    .article__title {
+                        font-size: 16px;
+                    }
+
+                    .image-wrapper::before {
+                        content: none;
+                    }
+            }
+        }
+
+        &__slide {
+            padding-right: 40px;
+            padding-left: 40px;
+
+             .swiper-button-prev,  .swiper-rtl .swiper-button-next {
+                left: 0;
+                right: auto;
+            }
         }
     }
     // --------------------------------------------------------------------footer

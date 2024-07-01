@@ -1769,6 +1769,10 @@ img {
   font-weight: bold;
   color: #006838;
 }
+.breadcrumb-item:hover {
+  font-weight: bold;
+  color: #006838;
+}
 .breadcrumb.breadcrumb--secondary .breadcrumb-item:nth-child(n+2) {
   font-weight: 400;
   color: #333;
@@ -2059,6 +2063,27 @@ img {
 
 .heading-tertiary {
   position: relative;
+}
+
+.heading-quaternary {
+  font-weight: bold;
+  font-size: 20px;
+  position: relative;
+  color: #096639;
+  border-left: 3px solid #ACCE22;
+  padding-left: 6px;
+  padding-right: 15px;
+  margin-bottom: 20px;
+}
+
+.heading-quinary {
+  font-weight: bold;
+  font-size: 32px;
+  position: relative;
+  color: #096639;
+  border-bottom: 2px solid #006838;
+  padding-bottom: 12px;
+  margin-bottom: 20px;
 }
 
 .section-primary {
@@ -2554,6 +2579,142 @@ img {
 }
 .cate-doctor-primary .section-tertiary__content .article__content {
   margin-top: 24px;
+}
+
+.pagi-primary {
+  position: relative;
+}
+.pagi-primary .swiper-pagination {
+  top: 18px;
+  bottom: auto;
+  text-align: right;
+}
+.pagi-primary .swiper-pagination-bullet {
+  width: 1rem;
+  height: 0.25rem;
+  border-radius: 0;
+}
+.pagi-primary .swiper-pagination-bullet-active {
+  background: #096639;
+}
+.pagi-primary .swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,
+.pagi-primary .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+  margin: 0 2px;
+}
+.pagi-primary--fixTop .swiper-pagination {
+  top: 0;
+}
+
+.read-a-lot__item .text {
+  border-top: 1px solid #e0e0e0;
+}
+
+.border-73-t {
+  border-top: 1px solid #737373;
+}
+
+.block-three__content {
+  background-color: #f1f9ff;
+}
+.block-three__content .article-large {
+  background-color: #D8EEFF;
+}
+.block-three__content .article-large .article-content {
+  margin-top: 0;
+  padding: 12px 20px;
+}
+.block-three__content .article-small .article {
+  padding: 12px;
+  border-top: 1px solid #c4c4c4;
+}
+.block-three__content .article-small .article:first-child {
+  border-top: 0;
+  padding-top: 0;
+}
+
+.disease-list-primary {
+  background-image: url("../images/bg_6.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 20px 40px;
+}
+.disease-list-primary .article {
+  display: flex;
+  align-items: center;
+}
+.disease-list-primary .article .article__img {
+  flex-shrink: 0;
+  width: 300px;
+  border-radius: 999px;
+  overflow: hidden;
+}
+.disease-list-primary .article .article__content {
+  flex: 1;
+  padding-left: 40px;
+}
+
+.disease-list-secondary__content {
+  margin-top: 30px;
+}
+.disease-list-secondary__slide {
+  position: relative;
+  padding-right: 100px;
+}
+.disease-list-secondary__slide .swiper-slide {
+  width: auto !important;
+  font-size: 14px;
+  color: #333;
+  padding: 11px 16px;
+  background-color: #D8EEFF;
+  border-radius: 4px;
+  margin-right: 16px;
+}
+.disease-list-secondary__slide .swiper-button-next, .disease-list-secondary__slide .swiper-rtl .swiper-button-prev {
+  right: 0;
+  left: auto;
+  color: #0870D1;
+}
+.disease-list-secondary__slide .swiper-button-prev, .disease-list-secondary__slide .swiper-rtl .swiper-button-next {
+  left: auto;
+  right: 50px;
+  color: #828282;
+}
+.disease-list-secondary__slide .swiper-button-next, .disease-list-secondary__slide .swiper-button-prev {
+  width: 40px;
+  height: 40px;
+  background: #F4F6F8;
+  border-radius: 999px;
+}
+.disease-list-secondary__slide .swiper-button-next:after, .disease-list-secondary__slide .swiper-button-prev:after {
+  font-size: 16px;
+}
+.disease-list-secondary .articles {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 30px;
+  border-bottom: 1px solid #c4c4c4;
+}
+.disease-list-secondary .articles .article {
+  width: calc(50% - 15px);
+  padding: 30px 0;
+}
+.disease-list-secondary .articles .article .image-wrapper::before {
+  content: "";
+  position: absolute;
+  background-image: linear-gradient(360deg, #fff, transparent);
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 30px;
+  width: 100%;
+  z-index: 10;
+}
+.disease-list-secondary .articles .article .article__content {
+  max-width: 400px;
+  margin: auto;
+  margin-top: -20px;
+  position: relative;
+  z-index: 10;
 }
 
 .detail-primary {
@@ -3093,6 +3254,21 @@ img {
   .detail-doctor-primary .article__img {
     width: 200px;
   }
+
+  .detail-primary__right,
+.cate-primary__right {
+    padding-left: 0;
+    border-left: 0;
+    margin-top: 30px;
+  }
+  .detail-primary__right .box-event,
+.cate-primary__right .box-event {
+    max-width: 100%;
+  }
+  .detail-primary__right .ads-right img,
+.cate-primary__right .ads-right img {
+    margin: auto;
+  }
 }
 @media (max-width: 640px) {
   .d-sm-none {
@@ -3112,15 +3288,19 @@ img {
   }
 
   .heading-secondary {
-    font-size: 24px;
+    font-size: 20px;
   }
 
   .heading-tertiary {
+    font-size: 20px;
+  }
+
+  .heading-quinary {
     font-size: 24px;
   }
 
   .section-primary__title {
-    font-size: 24px;
+    font-size: 20px;
   }
   .section-primary__content {
     padding: 20px;
@@ -3295,6 +3475,55 @@ img {
   .other-news .heading-quinary {
     font-size: 26px;
     margin-bottom: 20px;
+  }
+
+  .disease-list-primary {
+    padding: 20px;
+  }
+  .disease-list-primary .article {
+    display: block;
+  }
+  .disease-list-primary .article .article__img {
+    width: 100%;
+  }
+  .disease-list-primary .article .article__content {
+    padding: 20px 0 0;
+  }
+  .disease-list-primary .article .article__title {
+    font-size: 28px;
+  }
+
+  .disease-list-secondary .articles {
+    column-gap: 20px;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    margin-top: 20px;
+  }
+  .disease-list-secondary .articles .article {
+    width: calc(50% - 10px);
+    padding: 0;
+  }
+  .disease-list-secondary .articles .article .time-public,
+.disease-list-secondary .articles .article .article__des {
+    display: none;
+  }
+  .disease-list-secondary .articles .article .article__content {
+    max-width: 100%;
+    margin-top: 15px;
+  }
+  .disease-list-secondary .articles .article .article__title {
+    font-size: 16px;
+  }
+  .disease-list-secondary .articles .article .image-wrapper::before {
+    content: none;
+  }
+  .disease-list-secondary__slide {
+    padding-right: 40px;
+    padding-left: 40px;
+  }
+  .disease-list-secondary__slide .swiper-button-prev, .disease-list-secondary__slide .swiper-rtl .swiper-button-next {
+    left: 0;
+    right: auto;
   }
 
   .footer-logo img {
